@@ -47,7 +47,9 @@ game.TitleScreen = me.ScreenObject.extend({
                 // size does not matter, it's just to avoid having a zero size
                 // renderable
                 this._super(me.Renderable, 'init', [0, 0, 100, 100]);
-                this.text = me.device.touch ? 'Tap to start' : 'PRESS SPACE OR CLICK LEFT MOUSE BUTTON TO START \n\t\t\t\t\t\t\t\t\t\t\tPRESS "M" TO MUTE SOUND';
+                this.text = me.device.touch
+									? "Clique para começar"
+									: 'PRESSIONE ESPAÇO OU CLIQUE O BOTÃO ESQUERDO DO MOUSE PARA COMEÇAR \n\t\t\t\t\t\t\t\t\t\t\tPRESSIONE "M" PARA SILENCIAR O SOM';
                 this.font = new me.Font('gamefont', 20, '#000');
             },
             draw: function (renderer) {

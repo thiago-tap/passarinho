@@ -35,7 +35,7 @@ var game = {
             scale : "auto",
             scaleMethod: "fit"
         })) {
-            alert("Your browser does not support HTML5 canvas.");
+            alert("Seu navegador não suporta tela HTML5.");
             return;
         }
         me.audio.init("mp3,ogg");
